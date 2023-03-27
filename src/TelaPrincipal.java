@@ -7,7 +7,6 @@ public class TelaPrincipal extends JFrame {
 
     private JLabel labelTitulo;
     private JLabel labelNome;
-    private JLabel labelTotalHorasTrabalhadas;
     private JLabel campoNome;
     private JTable tabelaPontos;
     private JButton botaoRegistrarPonto;
@@ -22,7 +21,6 @@ public class TelaPrincipal extends JFrame {
 
         this.labelTitulo = new JLabel("Registro de Ponto");
         this.labelNome = new JLabel("Nome:");
-        this.labelTotalHorasTrabalhadas = new JLabel("Total de horas trabalhadas:");
         this.campoNome = new JLabel(user.getNome());
         this.tabelaPontos = new JTable(modeloTabelaPontos);
         this.botaoRegistrarPonto = new JButton("Registrar ponto");
@@ -53,7 +51,6 @@ public class TelaPrincipal extends JFrame {
         painelCampos.add(new JLabel(""));
 
         painelTabela.add(scrollPane, BorderLayout.CENTER);
-        painelTabela.add(this.labelTotalHorasTrabalhadas, BorderLayout.SOUTH);
 
         painelBotoes.add(this.botaoRegistrarPonto);
         painelBotoes.add(this.botaoSair);
