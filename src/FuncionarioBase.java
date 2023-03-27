@@ -51,6 +51,10 @@ public abstract class FuncionarioBase implements Funcionario{
         pontosRegistrados.add(new Ponto(horaEntrada, horaSaida, nome));
     }
 
+    public void removerPonto(Ponto ponto) {
+        pontosRegistrados.remove(ponto);
+    }
+
     private Ponto getUltimoPonto() {
         if (pontosRegistrados.isEmpty()) {
             return null;

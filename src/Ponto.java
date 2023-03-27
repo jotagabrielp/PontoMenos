@@ -9,6 +9,9 @@ public class Ponto {
     public Date getHoraEntrada() {
         return horaEntrada;
     }
+
+    public void setHoraEntrada(Date horaEntrada) {this.horaEntrada = horaEntrada;}
+    public void setHoraSaida(Date horaSaida) {this.horaEntrada = horaSaida;}
     public Date getHoraSaida() {
         return horaSaida;
     }
