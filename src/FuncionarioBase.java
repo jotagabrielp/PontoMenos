@@ -4,6 +4,7 @@ import java.util.List;
 
 public abstract class FuncionarioBase implements Funcionario{
 
+
     protected String nome;
     protected List<Ponto> pontosRegistrados = new ArrayList<>();
 
@@ -25,6 +26,10 @@ public abstract class FuncionarioBase implements Funcionario{
 
     public String getNome() {
         return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public List<Ponto> getPontosRegistrados() {
